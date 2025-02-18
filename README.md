@@ -1,2 +1,2 @@
 # java-ffm-example
-An example of using Java FFM API
+An example of using Java FFM API.
