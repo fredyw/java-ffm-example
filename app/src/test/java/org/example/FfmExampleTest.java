@@ -6,22 +6,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FfmExampleTest {
     @Test
-    void add() {
+    void add() throws Throwable {
         assertEquals(3, FfmExample.calculate(new FfmExample.Input(1, 2, '+')));
     }
 
     @Test
-    void substract() {
+    void substract() throws Throwable {
         assertEquals(2, FfmExample.calculate(new FfmExample.Input(4, 2, '-')));
     }
 
     @Test
-    void multiply() {
+    void multiply() throws Throwable {
         assertEquals(2, FfmExample.calculate(new FfmExample.Input(1, 2, '*')));
     }
 
     @Test
-    void divide() {
+    void divide() throws Throwable {
         assertEquals(2, FfmExample.calculate(new FfmExample.Input(4, 2, '/')));
     }
 }

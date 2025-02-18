@@ -1,5 +1,4 @@
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
 
@@ -12,7 +11,6 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-// Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(23)
@@ -20,13 +18,12 @@ java {
 }
 
 application {
-    // Define the main class for the application.
-    mainClass = "org.example.App"
+    mainClass = "org.example.FfmExample"
 }
 
 tasks.named<Test>("test") {
-    // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+    jvmArgs("--enable-native-access=ALL-UNNAMED")
 }
 
 tasks.withType<JavaExec>().configureEach {
