@@ -18,17 +18,6 @@ pub extern "C" fn calculate(input: Input) -> i32 {
     }
 }
 
-#[no_mangle]
-pub extern "C" fn calculate1(a: i32, b: i32, op: c_char) -> i32 {
-    let op = op as u8;
-    match op {
-        b'+' => a + b,
-        b'-' => a - b,
-        b'*' => a * b,
-        _ => a / b,
-    }
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
