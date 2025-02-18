@@ -6,3 +6,6 @@ build
 
 # Ignore IntelliJ directory
 .idea
+
+# Ignore Rust build output directory
+target
