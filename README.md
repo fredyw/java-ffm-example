@@ -1,5 +1,5 @@
 # java-ffm-example
-An example of using Java FFM API.
+An example of using Java (Foreign Function andn Memory) FFM API.
 
 ## How to Build
 ```
