@@ -24,25 +24,41 @@ mod tests {
 
     #[test]
     fn add() {
-        let result = calculate(Input {a: 1, b: 2, op: b'+' as c_char});
+        let result = calculate(Input {
+            a: 1,
+            b: 2,
+            op: b'+' as c_char,
+        });
         assert_eq!(result, 3);
     }
 
     #[test]
     fn subtract() {
-        let result = calculate(Input {a: 4, b: 2, op: b'-' as c_char});
+        let result = calculate(Input {
+            a: 4,
+            b: 2,
+            op: b'-' as c_char,
+        });
         assert_eq!(result, 2);
     }
 
     #[test]
     fn multiply() {
-        let result = calculate(Input {a: 1, b: 2, op: b'*' as c_char});
+        let result = calculate(Input {
+            a: 1,
+            b: 2,
+            op: b'*' as c_char,
+        });
         assert_eq!(result, 2);
     }
 
     #[test]
     fn divide() {
-        let result = calculate(Input {a: 4, b: 2, op: b'/' as c_char});
+        let result = calculate(Input {
+            a: 4,
+            b: 2,
+            op: b'/' as c_char,
+        });
         assert_eq!(result, 2);
     }
 }

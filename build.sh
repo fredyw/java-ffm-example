@@ -1,3 +1,3 @@
 #!/bin/bash
 
-(cd native; cargo build --release) && ./gradlew build
+(cd native; cargo fmt && cargo build --release) && ./gradlew build
